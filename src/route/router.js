@@ -11,6 +11,8 @@ import StepSix from '../components/StepSix'
 import StepSeven from '../components/StepSeven'
 import ReducerSample from '../components/ReducerSample'
 import ReducerSample2 from '../components/ReducerSample2'
+import ParentComp from '../components/ParentComp'
+import ContextDemoParent from '../components/demo/ContextDemoParent'
 
 export const router = createBrowserRouter([
   {
@@ -62,5 +64,13 @@ export const router = createBrowserRouter([
   {
     path: '/reducer2',
     element: <ReducerSample2 />,
+  },
+  {
+    path: '/parent',
+    element: <ParentComp />,
+  },
+  {
+    path: '/context-demo',
+    element: <ContextDemoParent />,
   },
 ])
