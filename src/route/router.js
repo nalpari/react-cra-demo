@@ -9,6 +9,8 @@ import StepFour from '../components/StepFour'
 import StepFive from '../components/StepFive'
 import StepSix from '../components/StepSix'
 import StepSeven from '../components/StepSeven'
+import ReducerSample from '../components/ReducerSample'
+import ReducerSample2 from '../components/ReducerSample2'
 
 export const router = createBrowserRouter([
   {
@@ -52,5 +54,13 @@ export const router = createBrowserRouter([
         element: <StepSeven />,
       },
     ],
+  },
+  {
+    path: '/reducer',
+    element: <ReducerSample />,
+  },
+  {
+    path: '/reducer2',
+    element: <ReducerSample2 />,
   },
 ])
